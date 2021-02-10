@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="6" offsetMd="3">
+        <div >
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <img src="https://media.metrolatam.com/2019/07/15/rickymorty-3f0f3b02a2f5e878cd6a9c2fbb4910b9-1200x600.jpg" alt="">
+              <ion-card-title>Rick and Morty characters list!</ion-card-title>
+              <ion-button [routerLink]="['/user-list']" expand="block">See List</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
