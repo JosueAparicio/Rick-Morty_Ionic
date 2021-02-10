@@ -9,16 +9,16 @@ import { HttpClient } from '@angular/common/http';
 export class UserListPage implements OnInit {
 
   API: string = 'https://rickandmortyapi.com/api/';
-  characters  = [];
+  characters: any;
   constructor(
-   private _http: HttpClient
+    private _http: HttpClient
   ) { }
 
   ngOnInit() {
-    this._http.get<any>(`${this.API}character`).subscribe (data =>{
-     // console.log(data);
+    this._http.get<any>(`${this.API}character`).subscribe(data => {
+      // console.log(data);
       this.characters = data.results;
+
     });
   }
-
 }
